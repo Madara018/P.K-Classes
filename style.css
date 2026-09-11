@@ -146,24 +146,18 @@ button:hover {
 .download-btn:hover {
     transform: translateY(-2px);
 }
-/* ===== HISTORY PDF CARD ===== */
+/* ===== HISTORY PDF ===== */
 
 .history-card {
     position: relative;
     max-width: 800px;
-    margin: 50px auto;
+    margin: 45px auto;
     padding: 40px;
-    background: white;
+    background: #ffffff;
     border-radius: 22px;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.10);
     border: 1px solid #e5e7eb;
-    transition: 0.3s ease;
-}
-
-.history-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.15);
 }
 
 .history-icon {
@@ -185,14 +179,14 @@ button:hover {
 }
 
 .history-card p {
-    margin: 0 0 20px;
-    font-size: 17px;
+    margin-bottom: 25px;
     color: #64748b;
+    font-size: 17px;
 }
 
 .free-badge {
     position: absolute;
-    top: 22px;
+    top: 20px;
     right: 25px;
     background: #fff4d6;
     color: #b77900;
@@ -202,26 +196,19 @@ button:hover {
     font-weight: bold;
 }
 
-.history-line {
-    color: #2563eb;
-    font-size: 22px;
-    margin: 15px 0;
-}
-
 .pdf-buttons {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-top: 20px;
 }
 
 .pdf-buttons a {
-    text-decoration: none;
+    display: inline-block;
     padding: 13px 25px;
     border-radius: 30px;
+    text-decoration: none;
     font-weight: bold;
     font-size: 16px;
-    transition: 0.25s;
 }
 
 .view-btn {
@@ -240,7 +227,6 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Mobile */
 @media (max-width: 600px) {
     .history-card {
         margin: 30px 15px;
@@ -250,84 +236,10 @@ button:hover {
     .free-badge {
         position: static;
         display: inline-block;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     .pdf-buttons {
         flex-direction: column;
     }
-
-    .pdf-buttons a {
-        width: auto;
-    }
-}
-/* PDF CARD */
-.pdf-card {
-    position: relative;
-    background: white;
-    padding: 25px;
-    border-radius: 18px;
-    text-align: center;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-    transition: 0.3s;
-    border: 1px solid #eee;
-}
-
-.pdf-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
-}
-
-.pdf-icon {
-    font-size: 45px;
-    margin-bottom: 10px;
-}
-
-.pdf-card h3 {
-    margin: 8px 0;
-    font-size: 22px;
-}
-
-.pdf-card p {
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.pdf-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.pdf-buttons a {
-    text-decoration: none;
-    padding: 10px 16px;
-    border-radius: 10px;
-    font-weight: bold;
-    transition: 0.2s;
-}
-
-.view-btn {
-    background: #2563eb;
-    color: white;
-}
-
-.download-btn {
-    background: #16a34a;
-    color: white;
-}
-
-.pdf-buttons a:hover {
-    transform: scale(1.05);
-}
-
-.free-badge {
-    display: inline-block;
-    margin-top: 18px;
-    padding: 5px 12px;
-    background: #fff3cd;
-    color: #856404;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: bold;
 }
