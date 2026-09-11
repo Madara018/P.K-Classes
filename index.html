@@ -1,16 +1,16 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>My Classes </title>
+    <title>My Classes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Welcome to My Classes</h1>
+<h1>Welcome to My Classes</h1>
 
-    <p>Hello! In My Class You Break All Exam </p>
-<button onclick="showMessage()">Click Me</button>
+<p>Hello! In My Class You Break All Exam</p>
+
 <!-- IMPORTANT DOCUMENTS -->
 <section class="documents" id="documents">
 
@@ -20,81 +20,101 @@
         View and download important study materials
     </p>
 
+    <!-- FREE SYQ -->
     <div class="document-card">
 
-        <div class="pdf-icon">
-            📄
-        </div>
+        <div class="pdf-icon">📄</div>
 
         <div class="document-info">
             <h3>SYQ’s</h3>
-
-            <p>
-                Sample Yearly Questions for students
-            </p>
-
+            <p>Sample Yearly Questions for students</p>
             <span>📑 PDF File</span>
         </div>
 
         <div class="document-buttons">
 
-           <a href="SYQ-Class-10.pdf" target="_blank" class="view-btn">
+            <a href="SYQ-Class-10.pdf"
+               target="_blank"
+               class="view-btn">
                 📄 View PDF
             </a>
 
-            <a href="SYQ-Class-10.pdf" download class="download-btn">
+            <a href="SYQ-Class-10.pdf"
+               download
+               class="download-btn">
                 ⬇ Download PDF
             </a>
 
         </div>
-
-    </div>
-<div class="pdf-card history-card">
-
-    <span class="free-badge">⭐ FREE PDF</span>
-
-    <div class="history-icon">
-        📚
-    </div>
-
-    <h3>Class 10 History</h3>
-
-    <p>Complete History PDF</p>
-
-    <div class="pdf-buttons">
-
-        <a href="pdfs/History.pdf" target="_blank" class="view-btn">
-            📄 View PDF
-        </a>
-
-        <a href="pdfs/History.pdf" download class="download-btn">
-            ⬇️ Download PDF
-        </a>
-
     </div>
 
 
-                
-<button onclick="payNow()">🔓 Unlock All PDFs – ₹10</button>
+    <!-- FREE HISTORY -->
+    <div class="pdf-card history-card">
+
+        <span class="free-badge">⭐ FREE PDF</span>
+
+        <div class="history-icon">
+            📚
+        </div>
+
+        <h3>Class 10 History</h3>
+
+        <p>Complete History PDF</p>
+
+        <div class="pdf-buttons">
+
+            <a href="pdfs/History.pdf"
+               target="_blank"
+               class="view-btn">
+                📄 View PDF
+            </a>
+
+            <a href="pdfs/History.pdf"
+               download
+               class="download-btn">
+                ⬇️ Download PDF
+            </a>
+
+        </div>
+    </div>
+
+
+    <!-- SUBSCRIPTION -->
+    <div class="subscription-card">
+
+        <h2>🔒 Unlock All PDFs</h2>
+
+        <p>
+            Get access to all study materials for
+            <strong>22 days</strong>
+        </p>
+
+        <h3>Only ₹10</h3>
+
+        <button onclick="payNow()" class="subscribe-btn">
+            💳 Pay ₹10 & Unlock
+        </button>
+
+    </div>
+
+</section>
+
 
 <script>
 function payNow() {
-    window.location.href =
-    "upi://pay?pa=YOUR-UPI-ID&pn=PK%20Classes&am=10&cu=INR";
+
+    const upiId = "YOUR-UPI-ID";
+
+    const paymentUrl =
+        "upi://pay?pa=" + upiId +
+        "&pn=PK%20Classes" +
+        "&am=10" +
+        "&cu=INR";
+
+    window.location.href = paymentUrl;
 }
 </script>
-</div>
-</section>
-<section class="hero" id="home">
-    <div class="hero-content">
-        <h1>Piyush & Kuldeep (P.K) Classes</h1>
-        <p>Learning Today, Leading Tomorrow</p>
 
-        <a href="#gallery" class="hero-btn">Explore Gallery</a>
-    </div>
-</section>
-<script>
-    alert("Hello! Welcome to my educational website");
-</script>
 </body>
 </html>
