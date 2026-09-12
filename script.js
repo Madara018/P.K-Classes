@@ -3,7 +3,7 @@ function showMessage() {
 }
 
 function payNow() {
-    const upiId = "YOUR-UPI-ID";
+    const upiId = "yourupi@bank";
 
     const paymentUrl =
         "upi://pay?pa=" + upiId +
